@@ -1,0 +1,13 @@
+{
+  "recommendations": [
+    "dotenv.dotenv-vscode",
+    "dbaeumer.vscode-eslint",
+    "eamodio.gitlens",
+    "streetsidesoftware.code-spell-checker",
+    "usernamehw.errorlens",
+    "pkief.material-icon-theme",
+    "rocketseat.theme-omni",
+    "mhutchie.git-graph",
+    "prisma.prisma"
+  ]
+}
