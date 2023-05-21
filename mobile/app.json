@@ -12,6 +12,7 @@
       "backgroundColor": "#09090A"
     },
     "assetBundlePatterns": ["**/*"],
+    "scheme": "nlw-spacetime",
     "ios": {
       "supportsTablet": false
     },
