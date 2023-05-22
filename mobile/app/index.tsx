@@ -76,7 +76,6 @@ export default function App() {
             COMEÇAR A CADASTRAR
           </Text>
         </TouchableOpacity>
-        {/* a */}
       </View>
 
       <Text className="text-center font-body text-sm leading-relaxed text-gray-200">
