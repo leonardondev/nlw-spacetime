@@ -23,9 +23,10 @@ export function MediaPicker() {
       <input
         type="file"
         accept="image/*"
-        onChange={onFileSelected}
+        name="coverUrl"
         id="media"
         className="invisible h-0 w-0"
+        onChange={onFileSelected}
       />
 
       {preview && previewType?.includes('image') && (
