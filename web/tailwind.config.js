@@ -57,12 +57,27 @@ module.exports = {
         stripes:
           'linear-gradient(to bottom, rgba(255 ,255, 255, 0.1), rgba(255 ,255, 255, 0.1) 12.5%, transparent 12.5%, transparent)',
         stars: 'url(../assets/bg-stars.svg)',
+        shimmer: 'linear-gradient(-90deg,#1d1d1f 0%,#29292c 50%,#1d1d1f 100%)',
       },
       backgroundSize: {
         stripes: '100% 8px',
+        shimmer: '400% 400%',
       },
       blur: {
         full: '194px',
+      },
+      animation: {
+        shimmer: 'shimmer 2s ease-in-out infinite',
+      },
+      keyframes: {
+        shimmer: {
+          '0%': {
+            backgroundPosition: '0% 0%',
+          },
+          '100%': {
+            backgroundPosition: '-135% 0%',
+          },
+        },
       },
     },
   },

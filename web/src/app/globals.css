@@ -6,3 +6,9 @@ body {
   -webkit-font-smoothing: antialiased;
   text-rendering: optimizeLegibility;
 }
+
+@layer utilities {
+  .shimmer-effect {
+    @apply animate-shimmer bg-shimmer;
+  }
+}
