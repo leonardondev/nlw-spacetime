@@ -1,6 +1,7 @@
 import Image from 'next/image'
 import { cookies } from 'next/headers'
 import { api } from '@/lib/api'
+import { ShareButton } from '@/components/ShareButton'
 
 interface Memory {
   id: string
@@ -25,21 +26,18 @@ export default async function MemoryDetails({ params }: any) {
   return (
     <div className="flex flex-1 flex-col gap-4">
       <div className="flex items-center justify-between gap-4">
-        <label
-          htmlFor="isPublic"
-          className="flex items-center gap-1.5 text-sm text-gray-200 hover:text-gray-100"
-        >
-          <input
-            readOnly
-            type="checkbox"
-            name="isPublic"
-            id="isPublic"
-            value="true"
-            checked={memory.isPublic}
-            className="h-4 w-4 rounded border-gray-400 bg-gray-700 text-purple-500"
-          />
-          Memória pública
-        </label>
+        {memory.isPublic ? (
+          <>
+            <span className="rounded-md bg-purple-500 px-2 py-0.5 text-sm text-gray-50">
+              Memória Pública
+            </span>
+            <ShareButton />
+          </>
+        ) : (
+          <span className="rounded-md bg-green-500 px-2 py-0.5 text-sm text-gray-700">
+            Memória Privada
+          </span>
+        )}
       </div>
 
       <Image

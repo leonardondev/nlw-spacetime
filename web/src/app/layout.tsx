@@ -5,6 +5,7 @@ import {
 import { cookies } from 'next/headers'
 import { ReactNode } from 'react'
 import './globals.css'
+import 'react-toastify/dist/ReactToastify.css'
 
 import { Copyright } from '@/components/Copyrigth'
 import { Hero } from '@/components/Hero'
